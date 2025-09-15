@@ -23,7 +23,7 @@ const Dashboard = () => {
     if (token) localStorage.setItem("token", token);
   }
   if (!token) {
-    window.location.href = "http://localhost:3000";
+    window.location.href = "https://zerodha-clone-1-lflj.onrender.com";
   }
 }, []);
   return (
