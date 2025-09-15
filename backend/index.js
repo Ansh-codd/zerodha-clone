@@ -16,7 +16,7 @@ const app = express();
 // ✅ CORS (only once, properly configured)
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["https://zerodha-clone-1-lflj.onrender.com", "https://zerodha-clone-2-e7y4.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
