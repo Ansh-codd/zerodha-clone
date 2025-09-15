@@ -16,7 +16,7 @@ function Verify() {
 
   const handleVerifyOtp = async () => {
     try {
-      const res = await axios.post("http://localhost:3002/verify-otp", {
+      const res = await axios.post("https://zerodha-clone-zal5.onrender.com/verify-otp", {
         mobile,
         otp,
       });
@@ -36,7 +36,7 @@ function Verify() {
 
   const handleFinalSignup = async () => {
     try {
-      const res = await axios.post("http://localhost:3002/signup", {
+      const res = await axios.post("https://zerodha-clone-zal5.onrender.com/signup", {
         mobile,
         ...formData,
       });
