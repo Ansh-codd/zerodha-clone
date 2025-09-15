@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login",
+        "https://zerodha-clone-zal5.onrender.com/login",
         { ...inputValue },
         { withCredentials: true }
       );
@@ -40,7 +40,7 @@ const Login = () => {
       if (success) {
         handleSuccess("Login successful ✅"); // 👈 Always show success text
         localStorage.setItem("token", data.token); // store JWT or session toke
-        window.location.href = `http://localhost:3001?token=${data.token}`;
+        window.location.href = `https://zerodha-clone-2-e7y4.onrender.com?token=${data.token}`;
       } else {
         handleError(message || "Invalid credentials");
       }
