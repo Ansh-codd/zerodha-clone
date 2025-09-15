@@ -28,7 +28,7 @@ function Signup() {
     }
 
     try {
-      const response = await axios.post("http://localhost:3002/send-otp", {
+      const response = await axios.post("https://zerodha-clone-zal5.onrender.com/send-otp", {
         mobile,
       });
 
@@ -52,7 +52,7 @@ function Signup() {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:3002/signup", {
+      const response = await axios.post("https://zerodha-clone-zal5.onrender.com/signup", {
         username,
         email,
         password,
